@@ -409,39 +409,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 3
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -463,35 +431,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 3
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -587,39 +532,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 3
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -641,35 +554,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 3
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -765,39 +655,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 3
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -819,35 +677,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 3
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -943,39 +778,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 3
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -997,35 +800,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 3
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -1553,7 +1333,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -1575,7 +1355,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -1599,9 +1379,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -1618,9 +1428,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -1638,10 +1448,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -1661,7 +1471,7 @@ node {
   name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -1684,9 +1494,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -1703,9 +1543,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -1723,10 +1563,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -1746,7 +1586,7 @@ node {
   name: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block0_0/conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -2143,39 +1983,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -2197,35 +2005,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -2321,39 +2106,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -2375,35 +2128,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -2499,39 +2229,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -2553,35 +2251,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -2677,39 +2352,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -2731,35 +2374,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -3287,7 +2907,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -3309,7 +2929,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -3333,9 +2953,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -3352,9 +3002,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -3372,10 +3022,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -3395,7 +3045,7 @@ node {
   name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -3418,9 +3068,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -3437,9 +3117,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -3457,10 +3137,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -3480,7 +3160,7 @@ node {
   name: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block0_1/conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -3877,39 +3557,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -3931,35 +3579,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -4055,39 +3680,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -4109,35 +3702,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -4233,39 +3803,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -4287,35 +3825,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -4411,39 +3926,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -4465,35 +3948,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -5021,7 +4481,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -5043,7 +4503,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -5067,9 +4527,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -5086,9 +4576,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -5106,10 +4596,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -5129,7 +4619,7 @@ node {
   name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -5152,9 +4642,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -5171,9 +4691,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -5191,10 +4711,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -5214,7 +4734,7 @@ node {
   name: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block0_2/conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -5611,39 +5131,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -5665,35 +5153,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -5789,39 +5254,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -5843,35 +5276,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -5967,39 +5377,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -6021,35 +5399,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -6145,39 +5500,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -6199,35 +5522,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -6755,7 +6055,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -6777,7 +6077,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -6801,9 +6101,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -6820,9 +6150,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -6840,10 +6170,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -6863,7 +6193,7 @@ node {
   name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -6886,9 +6216,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -6905,9 +6265,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -6925,10 +6285,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -6948,7 +6308,7 @@ node {
   name: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -7363,39 +6723,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -7417,35 +6745,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -7541,39 +6846,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -7595,35 +6868,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -7719,39 +6969,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -7773,35 +6991,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -7897,39 +7092,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -7951,35 +7114,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -8507,7 +7647,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -8529,7 +7669,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -8553,9 +7693,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -8572,9 +7742,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -8592,10 +7762,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -8615,7 +7785,7 @@ node {
   name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -8638,9 +7808,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -8657,9 +7857,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -8677,10 +7877,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -8700,7 +7900,7 @@ node {
   name: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -9097,39 +8297,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -9151,35 +8319,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -9275,39 +8420,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -9329,35 +8442,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -9453,39 +8543,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -9507,35 +8565,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -9631,39 +8666,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -9685,35 +8688,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -10241,7 +9221,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -10263,7 +9243,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -10287,9 +9267,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -10306,9 +9316,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -10326,10 +9336,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -10349,7 +9359,7 @@ node {
   name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -10372,9 +9382,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -10391,9 +9431,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -10411,10 +9451,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -10434,7 +9474,7 @@ node {
   name: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -10820,39 +9860,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -10874,35 +9882,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -10998,39 +9983,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -11052,35 +10005,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -11176,39 +10106,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -11230,35 +10128,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -11354,39 +10229,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 6
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -11408,35 +10251,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 6
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -11964,7 +10784,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -11986,7 +10806,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -12010,9 +10830,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -12029,9 +10879,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -12049,10 +10899,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -12072,7 +10922,7 @@ node {
   name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -12095,9 +10945,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -12114,9 +10994,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -12134,10 +11014,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -12157,7 +11037,7 @@ node {
   name: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -12555,39 +11435,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 36
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -12609,35 +11457,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 36
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -12733,39 +11558,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 36
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -12787,35 +11580,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 36
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -12911,39 +11681,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 36
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -12965,35 +11703,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 36
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -13089,39 +11804,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 36
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -13143,35 +11826,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 36
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -13699,7 +12359,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -13721,7 +12381,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -13745,9 +12405,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -13764,9 +12454,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -13784,10 +12474,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -13807,7 +12497,7 @@ node {
   name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -13830,9 +12520,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -13849,9 +12569,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -13869,10 +12589,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -13892,7 +12612,7 @@ node {
   name: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -14307,39 +13027,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 36
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -14361,35 +13049,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 36
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -14485,39 +13150,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 36
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -14539,35 +13172,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 36
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -14663,39 +13273,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 36
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -14717,35 +13295,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 36
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -14841,39 +13396,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 36
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -14895,35 +13418,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 36
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -15451,7 +13951,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -15473,7 +13973,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -15497,9 +13997,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -15516,9 +14046,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -15536,10 +14066,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -15559,7 +14089,7 @@ node {
   name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -15582,9 +14112,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -15601,9 +14161,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -15621,10 +14181,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -15644,7 +14204,7 @@ node {
   name: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -16041,39 +14601,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -16095,35 +14623,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -16219,39 +14724,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -16273,35 +14746,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -16397,39 +14847,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -16451,35 +14869,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -16575,39 +14970,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -16629,35 +14992,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -17185,7 +15525,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -17207,7 +15547,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -17231,9 +15571,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -17250,9 +15620,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -17270,10 +15640,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -17293,7 +15663,7 @@ node {
   name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -17316,9 +15686,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -17335,9 +15735,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -17355,10 +15755,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -17378,7 +15778,7 @@ node {
   name: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -17764,39 +16164,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -17818,35 +16186,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -17942,39 +16287,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -17996,35 +16309,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -18120,39 +16410,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -18174,35 +16432,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -18298,39 +16533,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -18352,35 +16555,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -18908,7 +17088,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -18930,7 +17110,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -18954,9 +17134,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -18973,9 +17183,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -18993,10 +17203,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -19016,7 +17226,7 @@ node {
   name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -19039,9 +17249,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -19058,9 +17298,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -19078,10 +17318,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -19101,7 +17341,7 @@ node {
   name: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -19516,39 +17756,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -19570,35 +17778,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -19694,39 +17879,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -19748,35 +17901,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -19872,39 +18002,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -19926,35 +18024,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -20050,39 +18125,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -20104,35 +18147,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -20660,7 +18680,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -20682,7 +18702,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -20706,9 +18726,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -20725,9 +18775,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -20745,10 +18795,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -20768,7 +18818,7 @@ node {
   name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -20791,9 +18841,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -20810,9 +18890,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -20830,10 +18910,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -20853,7 +18933,7 @@ node {
   name: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -21250,39 +19330,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -21304,35 +19352,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -21428,39 +19453,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -21482,35 +19475,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -21606,39 +19576,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -21660,35 +19598,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -21784,39 +19699,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 12
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -21838,35 +19721,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 12
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -22394,7 +20254,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -22416,7 +20276,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -22440,9 +20300,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -22459,9 +20349,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -22479,10 +20369,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -22502,7 +20392,7 @@ node {
   name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -22525,9 +20415,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -22544,9 +20464,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -22564,10 +20484,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -22587,7 +20507,7 @@ node {
   name: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -22985,39 +20905,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -23039,35 +20927,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -23163,39 +21028,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -23217,35 +21050,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -23341,39 +21151,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -23395,35 +21173,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -23519,39 +21274,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -23573,35 +21296,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -24129,7 +21829,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -24151,7 +21851,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -24175,9 +21875,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -24194,9 +21924,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -24214,10 +21944,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -24237,7 +21967,7 @@ node {
   name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -24260,9 +21990,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -24279,9 +22039,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -24299,10 +22059,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -24322,7 +22082,7 @@ node {
   name: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -24737,39 +22497,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -24791,35 +22519,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -24915,39 +22620,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -24969,35 +22642,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -25093,39 +22743,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -25147,35 +22765,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -25271,39 +22866,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 72
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -25325,35 +22888,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 72
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -25881,7 +23421,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -25903,7 +23443,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -25927,9 +23467,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -25946,9 +23516,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -25966,10 +23536,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -25989,7 +23559,7 @@ node {
   name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -26012,9 +23582,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -26031,9 +23631,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -26051,10 +23651,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -26074,7 +23674,7 @@ node {
   name: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -26471,39 +24071,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -26525,35 +24093,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -26649,39 +24194,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -26703,35 +24216,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -26827,39 +24317,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -26881,35 +24339,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -27005,39 +24440,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -27059,35 +24462,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -27615,7 +24995,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -27637,7 +25017,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -27661,9 +25041,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -27680,9 +25090,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -27700,10 +25110,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -27723,7 +25133,7 @@ node {
   name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -27746,9 +25156,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -27765,9 +25205,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -27785,10 +25225,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -27808,7 +25248,7 @@ node {
   name: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -28194,39 +25634,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -28248,35 +25656,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -28372,39 +25757,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -28426,35 +25779,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -28550,39 +25880,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -28604,35 +25902,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -28728,39 +26003,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -28782,35 +26025,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -29338,7 +26558,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -29360,7 +26580,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -29384,9 +26604,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -29403,9 +26653,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -29423,10 +26673,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -29446,7 +26696,7 @@ node {
   name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -29469,9 +26719,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -29488,9 +26768,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -29508,10 +26788,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -29531,7 +26811,7 @@ node {
   name: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -29946,39 +27226,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -30000,35 +27248,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -30124,39 +27349,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -30178,35 +27371,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -30302,39 +27472,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -30356,35 +27494,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -30480,39 +27595,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -30534,35 +27617,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -31090,7 +28150,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -31112,7 +28172,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -31136,9 +28196,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -31155,9 +28245,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -31175,10 +28265,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -31198,7 +28288,7 @@ node {
   name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -31221,9 +28311,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -31240,9 +28360,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -31260,10 +28380,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -31283,7 +28403,7 @@ node {
   name: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -31680,39 +28800,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -31734,35 +28822,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -31858,39 +28923,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -31912,35 +28945,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -32036,39 +29046,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -32090,35 +29068,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -32214,39 +29169,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -32268,35 +29191,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -32824,7 +29724,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -32846,7 +29746,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -32870,9 +29770,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -32889,9 +29819,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -32909,10 +29839,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -32932,7 +29862,7 @@ node {
   name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -32955,9 +29885,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -32974,9 +29934,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -32994,10 +29954,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -33017,7 +29977,7 @@ node {
   name: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -33415,39 +30375,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -33469,35 +30397,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -33593,39 +30498,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -33647,35 +30520,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -33771,39 +30621,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -33825,35 +30643,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -33949,39 +30744,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -34003,35 +30766,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -34559,7 +31299,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -34581,7 +31321,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -34605,9 +31345,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -34624,9 +31394,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -34644,10 +31414,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -34667,7 +31437,7 @@ node {
   name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -34690,9 +31460,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -34709,9 +31509,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -34729,10 +31529,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -34752,7 +31552,7 @@ node {
   name: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -35167,39 +31967,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -35221,35 +31989,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -35345,39 +32090,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -35399,35 +32112,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -35523,39 +32213,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -35577,35 +32235,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -35701,39 +32336,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -35755,35 +32358,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -36311,7 +32891,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -36333,7 +32913,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -36357,9 +32937,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -36376,9 +32986,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -36396,10 +33006,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -36419,7 +33029,7 @@ node {
   name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -36442,9 +33052,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -36461,9 +33101,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -36481,10 +33121,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -36504,7 +33144,7 @@ node {
   name: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -36901,39 +33541,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -36955,35 +33563,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -37079,39 +33664,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -37133,35 +33686,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -37257,39 +33787,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -37311,35 +33809,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -37435,39 +33910,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 24
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -37489,35 +33932,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 24
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -38045,7 +34465,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -38067,7 +34487,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -38091,9 +34511,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -38110,9 +34560,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -38130,10 +34580,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -38153,7 +34603,7 @@ node {
   name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -38176,9 +34626,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -38195,9 +34675,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -38215,10 +34695,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -38238,7 +34718,7 @@ node {
   name: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -38636,39 +35116,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -38690,35 +35138,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -38814,39 +35239,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -38868,35 +35261,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -38992,39 +35362,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -39046,35 +35384,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -39170,39 +35485,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -39224,35 +35507,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -39780,7 +36040,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -39802,7 +36062,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -39826,9 +36086,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -39845,9 +36135,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -39865,10 +36155,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -39888,7 +36178,7 @@ node {
   name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -39911,9 +36201,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -39930,9 +36250,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -39950,10 +36270,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -39973,7 +36293,7 @@ node {
   name: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -40388,39 +36708,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -40442,35 +36730,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -40566,39 +36831,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -40620,35 +36853,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -40744,39 +36954,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -40798,35 +36976,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -40922,39 +37077,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 144
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -40976,35 +37099,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 144
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -41532,7 +37632,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -41554,7 +37654,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -41578,9 +37678,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -41597,9 +37727,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -41617,10 +37747,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -41640,7 +37770,7 @@ node {
   name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -41663,9 +37793,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -41682,9 +37842,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -41702,10 +37862,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -41725,7 +37885,7 @@ node {
   name: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -42122,39 +38282,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -42176,35 +38304,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -42300,39 +38405,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -42354,35 +38427,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -42478,39 +38528,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -42532,35 +38550,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -42656,39 +38651,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -42710,35 +38673,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -43266,7 +39206,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -43288,7 +39228,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -43312,9 +39252,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -43331,9 +39301,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -43351,10 +39321,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -43374,7 +39344,7 @@ node {
   name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -43397,9 +39367,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -43416,9 +39416,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -43436,10 +39436,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -43459,7 +39459,7 @@ node {
   name: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -43845,39 +39845,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -43899,35 +39867,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -44023,39 +39968,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -44077,35 +39990,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -44201,39 +40091,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -44255,35 +40113,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -44379,39 +40214,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -44433,35 +40236,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -44989,7 +40769,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -45011,7 +40791,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -45035,9 +40815,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -45054,9 +40864,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -45074,10 +40884,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -45097,7 +40907,7 @@ node {
   name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -45120,9 +40930,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -45139,9 +40979,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -45159,10 +40999,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -45182,7 +41022,7 @@ node {
   name: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -45597,39 +41437,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -45651,35 +41459,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -45775,39 +41560,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -45829,35 +41582,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -45953,39 +41683,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -46007,35 +41705,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -46131,39 +41806,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -46185,35 +41828,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -46741,7 +42361,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -46763,7 +42383,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -46787,9 +42407,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -46806,9 +42456,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -46826,10 +42476,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -46849,7 +42499,7 @@ node {
   name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -46872,9 +42522,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -46891,9 +42571,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -46911,10 +42591,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -46934,7 +42614,7 @@ node {
   name: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -47331,39 +43011,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -47385,35 +43033,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -47509,39 +43134,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -47563,35 +43156,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -47687,39 +43257,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -47741,35 +43279,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -47865,39 +43380,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -47919,35 +43402,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -48475,7 +43935,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -48497,7 +43957,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -48521,9 +43981,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -48540,9 +44030,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -48560,10 +44050,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -48583,7 +44073,7 @@ node {
   name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -48606,9 +44096,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -48625,9 +44145,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -48645,10 +44165,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -48668,7 +44188,7 @@ node {
   name: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -49066,39 +44586,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -49120,35 +44608,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -49244,39 +44709,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -49298,35 +44731,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -49422,39 +44832,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -49476,35 +44854,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -49600,39 +44955,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -49654,35 +44977,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -50210,7 +45510,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -50232,7 +45532,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -50256,9 +45556,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -50275,9 +45605,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -50295,10 +45625,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -50318,7 +45648,7 @@ node {
   name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -50341,9 +45671,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -50360,9 +45720,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -50380,10 +45740,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -50403,7 +45763,7 @@ node {
   name: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -50818,39 +46178,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -50872,35 +46200,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -50996,39 +46301,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -51050,35 +46323,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -51174,39 +46424,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -51228,35 +46446,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -51352,39 +46547,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -51406,35 +46569,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -51962,7 +47102,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -51984,7 +47124,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -52008,9 +47148,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -52027,9 +47197,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -52047,10 +47217,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -52070,7 +47240,7 @@ node {
   name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -52093,9 +47263,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -52112,9 +47312,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -52132,10 +47332,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -52155,7 +47355,7 @@ node {
   name: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -52552,39 +47752,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -52606,35 +47774,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -52730,39 +47875,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -52784,35 +47897,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -52908,39 +47998,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -52962,35 +48020,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -53086,39 +48121,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -53140,35 +48143,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -53696,7 +48676,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -53718,7 +48698,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -53742,9 +48722,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -53761,9 +48771,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -53781,10 +48791,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -53804,7 +48814,7 @@ node {
   name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -53827,9 +48837,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -53846,9 +48886,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -53866,10 +48906,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -53889,7 +48929,7 @@ node {
   name: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -54287,39 +49327,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -54341,35 +49349,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -54465,39 +49450,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -54519,35 +49472,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -54643,39 +49573,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -54697,35 +49595,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -54821,39 +49696,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -54875,35 +49718,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -55431,7 +50251,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -55453,7 +50273,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -55477,9 +50297,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -55496,9 +50346,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -55516,10 +50366,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -55539,7 +50389,7 @@ node {
   name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -55562,9 +50412,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -55581,9 +50461,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -55601,10 +50481,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -55624,7 +50504,7 @@ node {
   name: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -56039,39 +50919,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -56093,35 +50941,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -56217,39 +51042,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -56271,35 +51064,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -56395,39 +51165,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -56449,35 +51187,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -56573,39 +51288,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -56627,35 +51310,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -57183,7 +51843,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -57205,7 +51865,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -57229,9 +51889,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -57248,9 +51938,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -57268,10 +51958,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -57291,7 +51981,7 @@ node {
   name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -57314,9 +52004,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -57333,9 +52053,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -57353,10 +52073,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -57376,7 +52096,7 @@ node {
   name: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -57773,39 +52493,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -57827,35 +52515,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -57951,39 +52616,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -58005,35 +52638,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -58129,39 +52739,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -58183,35 +52761,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -58307,39 +52862,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 48
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -58361,35 +52884,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 48
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -58917,7 +53417,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -58939,7 +53439,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -58963,9 +53463,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -58982,9 +53512,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -59002,10 +53532,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -59025,7 +53555,7 @@ node {
   name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -59048,9 +53578,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -59067,9 +53627,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -59087,10 +53647,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -59110,7 +53670,7 @@ node {
   name: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -59508,39 +54068,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -59562,35 +54090,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -59686,39 +54191,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -59740,35 +54213,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -59864,39 +54314,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -59918,35 +54336,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -60042,39 +54437,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -60096,35 +54459,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -60652,7 +54992,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -60674,7 +55014,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -60698,9 +55038,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -60717,9 +55087,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -60737,10 +55107,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -60760,7 +55130,7 @@ node {
   name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -60783,9 +55153,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -60802,9 +55202,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -60822,10 +55222,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -60845,7 +55245,7 @@ node {
   name: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -61260,39 +55660,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -61314,35 +55682,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -61438,39 +55783,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -61492,35 +55805,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -61616,39 +55906,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -61670,35 +55928,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -61794,39 +56029,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 288
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -61848,35 +56051,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 288
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -62404,7 +56584,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -62426,7 +56606,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -62450,9 +56630,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -62469,9 +56679,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -62489,10 +56699,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -62512,7 +56722,7 @@ node {
   name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -62535,9 +56745,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -62554,9 +56794,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -62574,10 +56814,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -62597,7 +56837,7 @@ node {
   name: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -62994,39 +57234,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -63048,35 +57256,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -63172,39 +57357,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -63226,35 +57379,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -63350,39 +57480,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -63404,35 +57502,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -63528,39 +57603,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -63582,35 +57625,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -64138,7 +58158,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -64160,7 +58180,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -64184,9 +58204,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -64203,9 +58253,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -64223,10 +58273,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -64246,7 +58296,7 @@ node {
   name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -64269,9 +58319,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -64288,9 +58368,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -64308,10 +58388,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -64331,7 +58411,7 @@ node {
   name: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -64717,39 +58797,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -64771,35 +58819,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -64895,39 +58920,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -64949,35 +58942,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -65073,39 +59043,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -65127,35 +59065,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -65251,39 +59166,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -65305,35 +59188,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -65861,7 +59721,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -65883,7 +59743,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -65907,9 +59767,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -65926,9 +59816,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -65946,10 +59836,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -65969,7 +59859,7 @@ node {
   name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -65992,9 +59882,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -66011,9 +59931,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -66031,10 +59951,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -66054,7 +59974,7 @@ node {
   name: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -66452,39 +60372,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -66506,35 +60394,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -66630,39 +60495,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -66684,35 +60517,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -66808,39 +60618,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -66862,35 +60640,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -66986,39 +60741,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -67040,35 +60763,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -67596,7 +61296,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -67618,7 +61318,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -67642,9 +61342,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -67661,9 +61391,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -67681,10 +61411,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -67704,7 +61434,7 @@ node {
   name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -67727,9 +61457,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -67746,9 +61506,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -67766,10 +61526,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -67789,7 +61549,7 @@ node {
   name: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -68204,39 +61964,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -68258,35 +61986,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -68382,39 +62087,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -68436,35 +62109,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -68560,39 +62210,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -68614,35 +62232,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -68738,39 +62333,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -68792,35 +62355,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -69348,7 +62888,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -69370,7 +62910,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -69394,9 +62934,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -69413,9 +62983,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -69433,10 +63003,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -69456,7 +63026,7 @@ node {
   name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -69479,9 +63049,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -69498,9 +63098,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -69518,10 +63118,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -69541,7 +63141,7 @@ node {
   name: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -69938,39 +63538,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -69992,35 +63560,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -70116,39 +63661,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -70170,35 +63683,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -70294,39 +63784,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -70348,35 +63806,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -70472,39 +63907,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -70526,35 +63929,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -71082,7 +64462,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -71104,7 +64484,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -71128,9 +64508,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -71147,9 +64557,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -71167,10 +64577,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -71190,7 +64600,7 @@ node {
   name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -71213,9 +64623,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -71232,9 +64672,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -71252,10 +64692,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -71275,7 +64715,7 @@ node {
   name: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -71673,39 +65113,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -71727,35 +65135,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -71851,39 +65236,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -71905,35 +65258,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -72029,39 +65359,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -72083,35 +65381,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -72207,39 +65482,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -72261,35 +65504,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -72817,7 +66037,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -72839,7 +66059,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -72863,9 +66083,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -72882,9 +66132,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -72902,10 +66152,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -72925,7 +66175,7 @@ node {
   name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -72948,9 +66198,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -72967,9 +66247,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -72987,10 +66267,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -73010,7 +66290,7 @@ node {
   name: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -73425,39 +66705,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -73479,35 +66727,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -73603,39 +66828,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -73657,35 +66850,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -73781,39 +66951,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -73835,35 +66973,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -73959,39 +67074,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 384
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -74013,35 +67096,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 384
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -74569,7 +67629,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -74591,7 +67651,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -74615,9 +67675,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -74634,9 +67724,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -74654,10 +67744,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -74677,7 +67767,7 @@ node {
   name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -74700,9 +67790,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -74719,9 +67839,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -74739,10 +67859,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -74762,7 +67882,7 @@ node {
   name: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -75159,39 +68279,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -75213,35 +68301,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -75337,39 +68402,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -75391,35 +68424,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -75515,39 +68525,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -75569,35 +68547,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -75693,39 +68648,7 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 64
-      }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -75747,35 +68670,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 64
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -76303,7 +69203,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -76325,7 +69225,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -76349,9 +69249,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -76368,9 +69298,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/read"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean/read"
   input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -76388,10 +69318,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -76411,7 +69341,7 @@ node {
   name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -76434,9 +69364,39 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -76453,9 +69413,9 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance/read"
   input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -76473,10 +69433,10 @@ node {
   }
 }
 node {
-  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/cond_1/Merge"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -76496,7 +69456,7 @@ node {
   name: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance"
-  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -76894,39 +69854,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn1/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn1/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/dsn1/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -76948,35 +69876,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn1/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn1/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn1/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn1/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -77072,39 +69977,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn1/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn1/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/dsn1/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -77126,35 +69999,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn1/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn1/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn1/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn1/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -77250,39 +70100,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn1/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn1/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/dsn1/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -77304,35 +70122,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn1/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn1/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn1/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn1/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -77428,39 +70223,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn1/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn1/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/dsn1/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -77482,35 +70245,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn1/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn1/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn1/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn1/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -78038,7 +70778,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -78060,7 +70800,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -78084,9 +70824,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/dsn1/batch_normalization/moving_mean"
+  name: "hed/dsn1/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn1/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn1/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/dsn1/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/dsn1/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -78103,9 +70873,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/dsn1/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/dsn1/batch_normalization/AssignMovingAvg/read"
+  input: "hed/dsn1/batch_normalization/moving_mean/read"
   input: "hed/dsn1/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -78123,10 +70893,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/dsn1/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/dsn1/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/dsn1/batch_normalization/cond_1/Merge"
+  input: "hed/dsn1/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/dsn1/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -78146,7 +70916,7 @@ node {
   name: "hed/dsn1/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/dsn1/batch_normalization/moving_mean"
-  input: "hed/dsn1/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/dsn1/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -78169,9 +70939,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/dsn1/batch_normalization/moving_variance"
+  name: "hed/dsn1/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn1/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn1/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/dsn1/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/dsn1/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -78188,9 +70988,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/dsn1/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/dsn1/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/dsn1/batch_normalization/moving_variance/read"
   input: "hed/dsn1/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -78208,10 +71008,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn1/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/dsn1/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/dsn1/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/dsn1/batch_normalization/cond_1/Merge"
+  input: "hed/dsn1/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/dsn1/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -78231,7 +71031,7 @@ node {
   name: "hed/dsn1/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/dsn1/batch_normalization/moving_variance"
-  input: "hed/dsn1/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/dsn1/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -78617,39 +71417,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/dsn2/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -78671,35 +71439,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn2/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn2/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -78795,39 +71540,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/dsn2/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -78849,35 +71562,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn2/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn2/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -78973,39 +71663,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/dsn2/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -79027,35 +71685,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn2/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn2/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -79151,39 +71786,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/dsn2/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -79205,35 +71808,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn2/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn2/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -79761,7 +72341,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -79783,7 +72363,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -79807,9 +72387,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/dsn2/batch_normalization/moving_mean"
+  name: "hed/dsn2/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn2/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn2/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/dsn2/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/dsn2/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -79826,9 +72436,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/dsn2/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/dsn2/batch_normalization/AssignMovingAvg/read"
+  input: "hed/dsn2/batch_normalization/moving_mean/read"
   input: "hed/dsn2/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -79846,10 +72456,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/dsn2/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/dsn2/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/dsn2/batch_normalization/cond_1/Merge"
+  input: "hed/dsn2/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/dsn2/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -79869,7 +72479,7 @@ node {
   name: "hed/dsn2/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/dsn2/batch_normalization/moving_mean"
-  input: "hed/dsn2/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/dsn2/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -79892,9 +72502,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/dsn2/batch_normalization/moving_variance"
+  name: "hed/dsn2/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn2/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn2/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/dsn2/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/dsn2/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -79911,9 +72551,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/dsn2/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/dsn2/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/dsn2/batch_normalization/moving_variance/read"
   input: "hed/dsn2/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -79931,10 +72571,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/dsn2/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/dsn2/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/dsn2/batch_normalization/cond_1/Merge"
+  input: "hed/dsn2/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/dsn2/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -79954,7 +72594,7 @@ node {
   name: "hed/dsn2/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/dsn2/batch_normalization/moving_variance"
-  input: "hed/dsn2/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/dsn2/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -80264,39 +72904,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn2/conv2d_transpose/bias/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/conv2d_transpose/bias"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/conv2d_transpose/bias/Initializer/zeros/Const"
+  name: "hed/dsn2/conv2d_transpose/bias/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -80318,35 +72926,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn2/conv2d_transpose/bias/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn2/conv2d_transpose/bias/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn2/conv2d_transpose/bias/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn2/conv2d_transpose/bias"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -81379,39 +73964,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/dsn3/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -81433,35 +73986,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn3/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn3/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -81557,39 +74087,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/dsn3/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -81611,35 +74109,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn3/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn3/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -81735,39 +74210,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/dsn3/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -81789,35 +74232,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn3/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn3/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -81913,39 +74333,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/dsn3/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -81967,35 +74355,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn3/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn3/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -82523,7 +74888,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -82545,7 +74910,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -82569,9 +74934,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/dsn3/batch_normalization/moving_mean"
+  name: "hed/dsn3/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn3/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn3/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/dsn3/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/dsn3/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -82588,9 +74983,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/dsn3/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/dsn3/batch_normalization/AssignMovingAvg/read"
+  input: "hed/dsn3/batch_normalization/moving_mean/read"
   input: "hed/dsn3/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -82608,10 +75003,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/dsn3/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/dsn3/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/dsn3/batch_normalization/cond_1/Merge"
+  input: "hed/dsn3/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/dsn3/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -82631,7 +75026,7 @@ node {
   name: "hed/dsn3/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/dsn3/batch_normalization/moving_mean"
-  input: "hed/dsn3/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/dsn3/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -82654,9 +75049,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/dsn3/batch_normalization/moving_variance"
+  name: "hed/dsn3/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn3/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn3/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/dsn3/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/dsn3/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -82673,9 +75098,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/dsn3/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/dsn3/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/dsn3/batch_normalization/moving_variance/read"
   input: "hed/dsn3/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -82693,10 +75118,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/dsn3/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/dsn3/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/dsn3/batch_normalization/cond_1/Merge"
+  input: "hed/dsn3/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/dsn3/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -82716,7 +75141,7 @@ node {
   name: "hed/dsn3/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/dsn3/batch_normalization/moving_variance"
-  input: "hed/dsn3/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/dsn3/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -83026,39 +75451,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn3/conv2d_transpose/bias/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/conv2d_transpose/bias"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/conv2d_transpose/bias/Initializer/zeros/Const"
+  name: "hed/dsn3/conv2d_transpose/bias/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -83080,35 +75473,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn3/conv2d_transpose/bias/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn3/conv2d_transpose/bias/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn3/conv2d_transpose/bias/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn3/conv2d_transpose/bias"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -84141,39 +76511,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/dsn4/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -84195,35 +76533,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn4/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn4/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -84319,39 +76634,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/dsn4/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -84373,35 +76656,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn4/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn4/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -84497,39 +76757,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/dsn4/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -84551,35 +76779,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn4/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn4/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -84675,39 +76880,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/dsn4/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -84729,35 +76902,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn4/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn4/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -85285,7 +77435,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -85307,7 +77457,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -85331,9 +77481,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/dsn4/batch_normalization/moving_mean"
+  name: "hed/dsn4/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn4/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn4/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/dsn4/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/dsn4/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -85350,9 +77530,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/dsn4/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/dsn4/batch_normalization/AssignMovingAvg/read"
+  input: "hed/dsn4/batch_normalization/moving_mean/read"
   input: "hed/dsn4/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -85370,10 +77550,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/dsn4/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/dsn4/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/dsn4/batch_normalization/cond_1/Merge"
+  input: "hed/dsn4/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/dsn4/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -85393,7 +77573,7 @@ node {
   name: "hed/dsn4/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/dsn4/batch_normalization/moving_mean"
-  input: "hed/dsn4/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/dsn4/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -85416,9 +77596,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/dsn4/batch_normalization/moving_variance"
+  name: "hed/dsn4/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn4/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn4/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/dsn4/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/dsn4/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -85435,9 +77645,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/dsn4/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/dsn4/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/dsn4/batch_normalization/moving_variance/read"
   input: "hed/dsn4/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -85455,10 +77665,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/dsn4/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/dsn4/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/dsn4/batch_normalization/cond_1/Merge"
+  input: "hed/dsn4/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/dsn4/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -85478,7 +77688,7 @@ node {
   name: "hed/dsn4/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/dsn4/batch_normalization/moving_variance"
-  input: "hed/dsn4/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/dsn4/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -85788,39 +77998,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn4/conv2d_transpose/bias/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/conv2d_transpose/bias"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/conv2d_transpose/bias/Initializer/zeros/Const"
+  name: "hed/dsn4/conv2d_transpose/bias/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -85842,35 +78020,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn4/conv2d_transpose/bias/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn4/conv2d_transpose/bias/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn4/conv2d_transpose/bias/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn4/conv2d_transpose/bias"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -86903,39 +79058,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/batch_normalization/gamma/Initializer/ones/Const"
+  name: "hed/dsn5/batch_normalization/gamma/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -86957,35 +79080,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/batch_normalization/gamma/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn5/batch_normalization/gamma/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn5/batch_normalization/gamma/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/batch_normalization/gamma"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -87081,39 +79181,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/batch_normalization/beta/Initializer/zeros/Const"
+  name: "hed/dsn5/batch_normalization/beta/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -87135,35 +79203,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/batch_normalization/beta/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn5/batch_normalization/beta/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn5/batch_normalization/beta/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/batch_normalization/beta"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -87259,39 +79304,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/batch_normalization/moving_mean/Initializer/zeros/Const"
+  name: "hed/dsn5/batch_normalization/moving_mean/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -87313,35 +79326,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/batch_normalization/moving_mean/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn5/batch_normalization/moving_mean/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn5/batch_normalization/moving_mean/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/batch_normalization/moving_mean"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -87437,39 +79427,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/batch_normalization/moving_variance/Initializer/ones/Const"
+  name: "hed/dsn5/batch_normalization/moving_variance/Initializer/ones"
   op: "Const"
   attr {
     key: "_class"
@@ -87491,35 +79449,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 1.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/batch_normalization/moving_variance/Initializer/ones"
-  op: "Fill"
-  input: "hed/dsn5/batch_normalization/moving_variance/Initializer/ones/shape_as_tensor"
-  input: "hed/dsn5/batch_normalization/moving_variance/Initializer/ones/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/batch_normalization/moving_variance"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -88047,7 +79982,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.00999999977648
+        float_val: 0.990000009537
       }
     }
   }
@@ -88069,7 +80004,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0
+        float_val: 1.0
       }
     }
   }
@@ -88093,9 +80028,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/AssignMovingAvg/read"
-  op: "Identity"
-  input: "hed/dsn5/batch_normalization/moving_mean"
+  name: "hed/dsn5/batch_normalization/AssignMovingAvg/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn5/batch_normalization/moving_mean"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn5/batch_normalization/AssignMovingAvg/sub"
+  op: "Sub"
+  input: "hed/dsn5/batch_normalization/AssignMovingAvg/sub/x"
+  input: "hed/dsn5/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -88112,9 +80077,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/AssignMovingAvg/Sub"
+  name: "hed/dsn5/batch_normalization/AssignMovingAvg/sub_1"
   op: "Sub"
-  input: "hed/dsn5/batch_normalization/AssignMovingAvg/read"
+  input: "hed/dsn5/batch_normalization/moving_mean/read"
   input: "hed/dsn5/batch_normalization/cond/Merge_1"
   attr {
     key: "T"
@@ -88132,10 +80097,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/AssignMovingAvg/Mul"
+  name: "hed/dsn5/batch_normalization/AssignMovingAvg/mul"
   op: "Mul"
-  input: "hed/dsn5/batch_normalization/AssignMovingAvg/Sub"
-  input: "hed/dsn5/batch_normalization/cond_1/Merge"
+  input: "hed/dsn5/batch_normalization/AssignMovingAvg/sub_1"
+  input: "hed/dsn5/batch_normalization/AssignMovingAvg/sub"
   attr {
     key: "T"
     value {
@@ -88155,7 +80120,7 @@ node {
   name: "hed/dsn5/batch_normalization/AssignMovingAvg"
   op: "AssignSub"
   input: "hed/dsn5/batch_normalization/moving_mean"
-  input: "hed/dsn5/batch_normalization/AssignMovingAvg/Mul"
+  input: "hed/dsn5/batch_normalization/AssignMovingAvg/mul"
   attr {
     key: "T"
     value {
@@ -88178,9 +80143,39 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/AssignMovingAvg_1/read"
-  op: "Identity"
-  input: "hed/dsn5/batch_normalization/moving_variance"
+  name: "hed/dsn5/batch_normalization/AssignMovingAvg_1/sub/x"
+  op: "Const"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@hed/dsn5/batch_normalization/moving_variance"
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "hed/dsn5/batch_normalization/AssignMovingAvg_1/sub"
+  op: "Sub"
+  input: "hed/dsn5/batch_normalization/AssignMovingAvg_1/sub/x"
+  input: "hed/dsn5/batch_normalization/cond_1/Merge"
   attr {
     key: "T"
     value {
@@ -88197,9 +80192,9 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/AssignMovingAvg_1/Sub"
+  name: "hed/dsn5/batch_normalization/AssignMovingAvg_1/sub_1"
   op: "Sub"
-  input: "hed/dsn5/batch_normalization/AssignMovingAvg_1/read"
+  input: "hed/dsn5/batch_normalization/moving_variance/read"
   input: "hed/dsn5/batch_normalization/cond/Merge_2"
   attr {
     key: "T"
@@ -88217,10 +80212,10 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/batch_normalization/AssignMovingAvg_1/Mul"
+  name: "hed/dsn5/batch_normalization/AssignMovingAvg_1/mul"
   op: "Mul"
-  input: "hed/dsn5/batch_normalization/AssignMovingAvg_1/Sub"
-  input: "hed/dsn5/batch_normalization/cond_1/Merge"
+  input: "hed/dsn5/batch_normalization/AssignMovingAvg_1/sub_1"
+  input: "hed/dsn5/batch_normalization/AssignMovingAvg_1/sub"
   attr {
     key: "T"
     value {
@@ -88240,7 +80235,7 @@ node {
   name: "hed/dsn5/batch_normalization/AssignMovingAvg_1"
   op: "AssignSub"
   input: "hed/dsn5/batch_normalization/moving_variance"
-  input: "hed/dsn5/batch_normalization/AssignMovingAvg_1/Mul"
+  input: "hed/dsn5/batch_normalization/AssignMovingAvg_1/mul"
   attr {
     key: "T"
     value {
@@ -88550,39 +80545,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn5/conv2d_transpose/bias/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/conv2d_transpose/bias"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/conv2d_transpose/bias/Initializer/zeros/Const"
+  name: "hed/dsn5/conv2d_transpose/bias/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -88604,35 +80567,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn5/conv2d_transpose/bias/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn5/conv2d_transpose/bias/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn5/conv2d_transpose/bias/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn5/conv2d_transpose/bias"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -89638,39 +81578,7 @@ node {
   }
 }
 node {
-  name: "hed/dsn_fuse/conv2d/bias/Initializer/zeros/shape_as_tensor"
-  op: "Const"
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn_fuse/conv2d/bias"
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "hed/dsn_fuse/conv2d/bias/Initializer/zeros/Const"
+  name: "hed/dsn_fuse/conv2d/bias/Initializer/zeros"
   op: "Const"
   attr {
     key: "_class"
@@ -89692,35 +81600,12 @@ node {
       tensor {
         dtype: DT_FLOAT
         tensor_shape {
+          dim {
+            size: 1
+          }
         }
         float_val: 0.0
       }
-    }
-  }
-}
-node {
-  name: "hed/dsn_fuse/conv2d/bias/Initializer/zeros"
-  op: "Fill"
-  input: "hed/dsn_fuse/conv2d/bias/Initializer/zeros/shape_as_tensor"
-  input: "hed/dsn_fuse/conv2d/bias/Initializer/zeros/Const"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@hed/dsn_fuse/conv2d/bias"
-      }
-    }
-  }
-  attr {
-    key: "index_type"
-    value {
-      type: DT_INT32
     }
   }
 }
@@ -100023,104 +91908,7 @@ node {
   op: "NoOp"
   input: "^save/Assign"
   input: "^save/Assign_1"
-  input: "^save/Assign_2"
-  input: "^save/Assign_3"
-  input: "^save/Assign_4"
-  input: "^save/Assign_5"
-  input: "^save/Assign_6"
-  input: "^save/Assign_7"
-  input: "^save/Assign_8"
-  input: "^save/Assign_9"
   input: "^save/Assign_10"
-  input: "^save/Assign_11"
-  input: "^save/Assign_12"
-  input: "^save/Assign_13"
-  input: "^save/Assign_14"
-  input: "^save/Assign_15"
-  input: "^save/Assign_16"
-  input: "^save/Assign_17"
-  input: "^save/Assign_18"
-  input: "^save/Assign_19"
-  input: "^save/Assign_20"
-  input: "^save/Assign_21"
-  input: "^save/Assign_22"
-  input: "^save/Assign_23"
-  input: "^save/Assign_24"
-  input: "^save/Assign_25"
-  input: "^save/Assign_26"
-  input: "^save/Assign_27"
-  input: "^save/Assign_28"
-  input: "^save/Assign_29"
-  input: "^save/Assign_30"
-  input: "^save/Assign_31"
-  input: "^save/Assign_32"
-  input: "^save/Assign_33"
-  input: "^save/Assign_34"
-  input: "^save/Assign_35"
-  input: "^save/Assign_36"
-  input: "^save/Assign_37"
-  input: "^save/Assign_38"
-  input: "^save/Assign_39"
-  input: "^save/Assign_40"
-  input: "^save/Assign_41"
-  input: "^save/Assign_42"
-  input: "^save/Assign_43"
-  input: "^save/Assign_44"
-  input: "^save/Assign_45"
-  input: "^save/Assign_46"
-  input: "^save/Assign_47"
-  input: "^save/Assign_48"
-  input: "^save/Assign_49"
-  input: "^save/Assign_50"
-  input: "^save/Assign_51"
-  input: "^save/Assign_52"
-  input: "^save/Assign_53"
-  input: "^save/Assign_54"
-  input: "^save/Assign_55"
-  input: "^save/Assign_56"
-  input: "^save/Assign_57"
-  input: "^save/Assign_58"
-  input: "^save/Assign_59"
-  input: "^save/Assign_60"
-  input: "^save/Assign_61"
-  input: "^save/Assign_62"
-  input: "^save/Assign_63"
-  input: "^save/Assign_64"
-  input: "^save/Assign_65"
-  input: "^save/Assign_66"
-  input: "^save/Assign_67"
-  input: "^save/Assign_68"
-  input: "^save/Assign_69"
-  input: "^save/Assign_70"
-  input: "^save/Assign_71"
-  input: "^save/Assign_72"
-  input: "^save/Assign_73"
-  input: "^save/Assign_74"
-  input: "^save/Assign_75"
-  input: "^save/Assign_76"
-  input: "^save/Assign_77"
-  input: "^save/Assign_78"
-  input: "^save/Assign_79"
-  input: "^save/Assign_80"
-  input: "^save/Assign_81"
-  input: "^save/Assign_82"
-  input: "^save/Assign_83"
-  input: "^save/Assign_84"
-  input: "^save/Assign_85"
-  input: "^save/Assign_86"
-  input: "^save/Assign_87"
-  input: "^save/Assign_88"
-  input: "^save/Assign_89"
-  input: "^save/Assign_90"
-  input: "^save/Assign_91"
-  input: "^save/Assign_92"
-  input: "^save/Assign_93"
-  input: "^save/Assign_94"
-  input: "^save/Assign_95"
-  input: "^save/Assign_96"
-  input: "^save/Assign_97"
-  input: "^save/Assign_98"
-  input: "^save/Assign_99"
   input: "^save/Assign_100"
   input: "^save/Assign_101"
   input: "^save/Assign_102"
@@ -100131,6 +91919,7 @@ node {
   input: "^save/Assign_107"
   input: "^save/Assign_108"
   input: "^save/Assign_109"
+  input: "^save/Assign_11"
   input: "^save/Assign_110"
   input: "^save/Assign_111"
   input: "^save/Assign_112"
@@ -100141,6 +91930,7 @@ node {
   input: "^save/Assign_117"
   input: "^save/Assign_118"
   input: "^save/Assign_119"
+  input: "^save/Assign_12"
   input: "^save/Assign_120"
   input: "^save/Assign_121"
   input: "^save/Assign_122"
@@ -100151,6 +91941,7 @@ node {
   input: "^save/Assign_127"
   input: "^save/Assign_128"
   input: "^save/Assign_129"
+  input: "^save/Assign_13"
   input: "^save/Assign_130"
   input: "^save/Assign_131"
   input: "^save/Assign_132"
@@ -100161,6 +91952,7 @@ node {
   input: "^save/Assign_137"
   input: "^save/Assign_138"
   input: "^save/Assign_139"
+  input: "^save/Assign_14"
   input: "^save/Assign_140"
   input: "^save/Assign_141"
   input: "^save/Assign_142"
@@ -100171,6 +91963,7 @@ node {
   input: "^save/Assign_147"
   input: "^save/Assign_148"
   input: "^save/Assign_149"
+  input: "^save/Assign_15"
   input: "^save/Assign_150"
   input: "^save/Assign_151"
   input: "^save/Assign_152"
@@ -100181,6 +91974,7 @@ node {
   input: "^save/Assign_157"
   input: "^save/Assign_158"
   input: "^save/Assign_159"
+  input: "^save/Assign_16"
   input: "^save/Assign_160"
   input: "^save/Assign_161"
   input: "^save/Assign_162"
@@ -100191,6 +91985,7 @@ node {
   input: "^save/Assign_167"
   input: "^save/Assign_168"
   input: "^save/Assign_169"
+  input: "^save/Assign_17"
   input: "^save/Assign_170"
   input: "^save/Assign_171"
   input: "^save/Assign_172"
@@ -100201,6 +91996,7 @@ node {
   input: "^save/Assign_177"
   input: "^save/Assign_178"
   input: "^save/Assign_179"
+  input: "^save/Assign_18"
   input: "^save/Assign_180"
   input: "^save/Assign_181"
   input: "^save/Assign_182"
@@ -100211,6 +92007,7 @@ node {
   input: "^save/Assign_187"
   input: "^save/Assign_188"
   input: "^save/Assign_189"
+  input: "^save/Assign_19"
   input: "^save/Assign_190"
   input: "^save/Assign_191"
   input: "^save/Assign_192"
@@ -100221,6 +92018,8 @@ node {
   input: "^save/Assign_197"
   input: "^save/Assign_198"
   input: "^save/Assign_199"
+  input: "^save/Assign_2"
+  input: "^save/Assign_20"
   input: "^save/Assign_200"
   input: "^save/Assign_201"
   input: "^save/Assign_202"
@@ -100231,6 +92030,7 @@ node {
   input: "^save/Assign_207"
   input: "^save/Assign_208"
   input: "^save/Assign_209"
+  input: "^save/Assign_21"
   input: "^save/Assign_210"
   input: "^save/Assign_211"
   input: "^save/Assign_212"
@@ -100241,6 +92041,7 @@ node {
   input: "^save/Assign_217"
   input: "^save/Assign_218"
   input: "^save/Assign_219"
+  input: "^save/Assign_22"
   input: "^save/Assign_220"
   input: "^save/Assign_221"
   input: "^save/Assign_222"
@@ -100251,6 +92052,7 @@ node {
   input: "^save/Assign_227"
   input: "^save/Assign_228"
   input: "^save/Assign_229"
+  input: "^save/Assign_23"
   input: "^save/Assign_230"
   input: "^save/Assign_231"
   input: "^save/Assign_232"
@@ -100261,6 +92063,7 @@ node {
   input: "^save/Assign_237"
   input: "^save/Assign_238"
   input: "^save/Assign_239"
+  input: "^save/Assign_24"
   input: "^save/Assign_240"
   input: "^save/Assign_241"
   input: "^save/Assign_242"
@@ -100271,271 +92074,353 @@ node {
   input: "^save/Assign_247"
   input: "^save/Assign_248"
   input: "^save/Assign_249"
+  input: "^save/Assign_25"
   input: "^save/Assign_250"
   input: "^save/Assign_251"
   input: "^save/Assign_252"
   input: "^save/Assign_253"
   input: "^save/Assign_254"
+  input: "^save/Assign_26"
+  input: "^save/Assign_27"
+  input: "^save/Assign_28"
+  input: "^save/Assign_29"
+  input: "^save/Assign_3"
+  input: "^save/Assign_30"
+  input: "^save/Assign_31"
+  input: "^save/Assign_32"
+  input: "^save/Assign_33"
+  input: "^save/Assign_34"
+  input: "^save/Assign_35"
+  input: "^save/Assign_36"
+  input: "^save/Assign_37"
+  input: "^save/Assign_38"
+  input: "^save/Assign_39"
+  input: "^save/Assign_4"
+  input: "^save/Assign_40"
+  input: "^save/Assign_41"
+  input: "^save/Assign_42"
+  input: "^save/Assign_43"
+  input: "^save/Assign_44"
+  input: "^save/Assign_45"
+  input: "^save/Assign_46"
+  input: "^save/Assign_47"
+  input: "^save/Assign_48"
+  input: "^save/Assign_49"
+  input: "^save/Assign_5"
+  input: "^save/Assign_50"
+  input: "^save/Assign_51"
+  input: "^save/Assign_52"
+  input: "^save/Assign_53"
+  input: "^save/Assign_54"
+  input: "^save/Assign_55"
+  input: "^save/Assign_56"
+  input: "^save/Assign_57"
+  input: "^save/Assign_58"
+  input: "^save/Assign_59"
+  input: "^save/Assign_6"
+  input: "^save/Assign_60"
+  input: "^save/Assign_61"
+  input: "^save/Assign_62"
+  input: "^save/Assign_63"
+  input: "^save/Assign_64"
+  input: "^save/Assign_65"
+  input: "^save/Assign_66"
+  input: "^save/Assign_67"
+  input: "^save/Assign_68"
+  input: "^save/Assign_69"
+  input: "^save/Assign_7"
+  input: "^save/Assign_70"
+  input: "^save/Assign_71"
+  input: "^save/Assign_72"
+  input: "^save/Assign_73"
+  input: "^save/Assign_74"
+  input: "^save/Assign_75"
+  input: "^save/Assign_76"
+  input: "^save/Assign_77"
+  input: "^save/Assign_78"
+  input: "^save/Assign_79"
+  input: "^save/Assign_8"
+  input: "^save/Assign_80"
+  input: "^save/Assign_81"
+  input: "^save/Assign_82"
+  input: "^save/Assign_83"
+  input: "^save/Assign_84"
+  input: "^save/Assign_85"
+  input: "^save/Assign_86"
+  input: "^save/Assign_87"
+  input: "^save/Assign_88"
+  input: "^save/Assign_89"
+  input: "^save/Assign_9"
+  input: "^save/Assign_90"
+  input: "^save/Assign_91"
+  input: "^save/Assign_92"
+  input: "^save/Assign_93"
+  input: "^save/Assign_94"
+  input: "^save/Assign_95"
+  input: "^save/Assign_96"
+  input: "^save/Assign_97"
+  input: "^save/Assign_98"
+  input: "^save/Assign_99"
 }
 node {
   name: "init"
   op: "NoOp"
-  input: "^hed/mobilenet_v2/block0_0/conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block0_1/conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block0_2/conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
-  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/conv2d/kernel/Assign"
-  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma/Assign"
-  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta/Assign"
-  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
-  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
-  input: "^hed/dsn1/conv2d/kernel/Assign"
-  input: "^hed/dsn1/batch_normalization/gamma/Assign"
   input: "^hed/dsn1/batch_normalization/beta/Assign"
+  input: "^hed/dsn1/batch_normalization/gamma/Assign"
   input: "^hed/dsn1/batch_normalization/moving_mean/Assign"
   input: "^hed/dsn1/batch_normalization/moving_variance/Assign"
-  input: "^hed/dsn2/conv2d/kernel/Assign"
-  input: "^hed/dsn2/batch_normalization/gamma/Assign"
+  input: "^hed/dsn1/conv2d/kernel/Assign"
   input: "^hed/dsn2/batch_normalization/beta/Assign"
+  input: "^hed/dsn2/batch_normalization/gamma/Assign"
   input: "^hed/dsn2/batch_normalization/moving_mean/Assign"
   input: "^hed/dsn2/batch_normalization/moving_variance/Assign"
-  input: "^hed/dsn2/conv2d_transpose/kernel/Assign"
+  input: "^hed/dsn2/conv2d/kernel/Assign"
   input: "^hed/dsn2/conv2d_transpose/bias/Assign"
-  input: "^hed/dsn3/conv2d/kernel/Assign"
-  input: "^hed/dsn3/batch_normalization/gamma/Assign"
+  input: "^hed/dsn2/conv2d_transpose/kernel/Assign"
   input: "^hed/dsn3/batch_normalization/beta/Assign"
+  input: "^hed/dsn3/batch_normalization/gamma/Assign"
   input: "^hed/dsn3/batch_normalization/moving_mean/Assign"
   input: "^hed/dsn3/batch_normalization/moving_variance/Assign"
-  input: "^hed/dsn3/conv2d_transpose/kernel/Assign"
+  input: "^hed/dsn3/conv2d/kernel/Assign"
   input: "^hed/dsn3/conv2d_transpose/bias/Assign"
-  input: "^hed/dsn4/conv2d/kernel/Assign"
-  input: "^hed/dsn4/batch_normalization/gamma/Assign"
+  input: "^hed/dsn3/conv2d_transpose/kernel/Assign"
   input: "^hed/dsn4/batch_normalization/beta/Assign"
+  input: "^hed/dsn4/batch_normalization/gamma/Assign"
   input: "^hed/dsn4/batch_normalization/moving_mean/Assign"
   input: "^hed/dsn4/batch_normalization/moving_variance/Assign"
-  input: "^hed/dsn4/conv2d_transpose/kernel/Assign"
+  input: "^hed/dsn4/conv2d/kernel/Assign"
   input: "^hed/dsn4/conv2d_transpose/bias/Assign"
-  input: "^hed/dsn5/conv2d/kernel/Assign"
-  input: "^hed/dsn5/batch_normalization/gamma/Assign"
+  input: "^hed/dsn4/conv2d_transpose/kernel/Assign"
   input: "^hed/dsn5/batch_normalization/beta/Assign"
+  input: "^hed/dsn5/batch_normalization/gamma/Assign"
   input: "^hed/dsn5/batch_normalization/moving_mean/Assign"
   input: "^hed/dsn5/batch_normalization/moving_variance/Assign"
-  input: "^hed/dsn5/conv2d_transpose/kernel/Assign"
+  input: "^hed/dsn5/conv2d/kernel/Assign"
   input: "^hed/dsn5/conv2d_transpose/bias/Assign"
-  input: "^hed/dsn_fuse/conv2d/kernel/Assign"
+  input: "^hed/dsn5/conv2d_transpose/kernel/Assign"
   input: "^hed/dsn_fuse/conv2d/bias/Assign"
+  input: "^hed/dsn_fuse/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block0_0/conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block0_0/conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block0_0/conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block0_0/conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block0_1/conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block0_1/conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block0_1/conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block0_1/conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block0_2/conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block0_2/conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block0_2/conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block0_2/conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block1_0/1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block1_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block1_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block1_0/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block2_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block2_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block2_0/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block2_1/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block2_1/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block2_1/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block3_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block3_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block3_0/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block3_1/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block3_1/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block3_1/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block3_2/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block3_2/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block3_2/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_0/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_1/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_1/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_1/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_2/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_2/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_2/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_3/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_3/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block4_3/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_0/1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_0/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_0/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_0/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_1/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_1/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_1/projection_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/SeparableConv2d/depthwise_weights/Assign"
+  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_2/depthwise_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_2/expansion_1x1_conv2d/conv2d/kernel/Assign"
+  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/beta/Assign"
+  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/gamma/Assign"
+  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_mean/Assign"
+  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/batch_normalization/moving_variance/Assign"
+  input: "^hed/mobilenet_v2/block5_2/projection_1x1_conv2d/conv2d/kernel/Assign"
 }
 versions {
-  producer: 26
+  producer: 27
 }

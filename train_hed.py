@@ -32,7 +32,7 @@ flags.DEFINE_string('log_dir', './log',
                     'Log directory for tensorflow.')
 flags.DEFINE_integer('batch_size', 4, 
                      'Batch size, default 4.')
-flags.DEFINE_integer('iterations', 90000000, 
+flags.DEFINE_integer('iterations', 100, 
                      'Number of iterations, default 90000000.')
 flags.DEFINE_integer('display_step', 20, 
                      'Number of iterations between optimizer print info and save test image, default 20.')
